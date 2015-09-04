@@ -37,14 +37,14 @@ $ git checkout customer
 
 8:00 AM - 9:30 AM:: *Session 1:* _Intro to Pivotal Cloud Foundry_
 9:30 AM - 10:00 AM:: Morning Break
-10:00 AM - 10:15 AM:: *Session 3:* _Custom Buildpacks_
-10:15 AM - 11:00 AM:: *Session 4:*  _Spring Data on Cloud Foundry_
-11:00 AM - 11:30 AM:: *Session 5:* _Spring Boot Actuator_
+10:00 AM - 10:15 AM:: *Session 2:* _Custom Buildpacks_
+10:15 AM - 11:00 AM:: *Session 3:*  _Spring Data on Cloud Foundry_
+11:00 AM - 11:30 AM:: *Session 4:* _Spring Boot Actuator_
 11:30 PM - 12:30 PM:: Lunch
-12:30 PM - 1:30 PM:: *Session 6:* _Spring Config Server & Eureka on Cloud Foundry_
-1:30 PM - 2:00 PM:: *Session 7:* _Angular JS & Hystrix Demo_
+12:30 PM - 1:30 PM:: *Session 5:* _Spring Config Server & Eureka on Cloud Foundry_
+1:30 PM - 2:00 PM:: *Session 6:* _Angular JS & Hystrix Demo_
 2:00 PM - 2:30 PM:: Afternoon Break
-2:30 PM - 5:00 PM:: *Session 8:* _TBD:  Something with OAuth?_
+2:30 PM - 5:00 PM:: *Session 7:* _TBD:  Something with OAuth?_
 
 == Course Materials
 
@@ -53,11 +53,11 @@ $ git checkout customer
 ** link:session_01/lab_02/lab_02.adoc[Lab 2 - Binding to Cloud Foundry Services]
 ** link:session_01/lab_03/lab_03.adoc[Lab 3 - Scaling Applications]
 ** link:session_01/lab_04/lab_04.adoc[Lab 4 - Monitoring Applications]
-* Session 3 (link:session_03/session_03.pdf[Slides])
-* Session 4
-** link:session_04/lab_05/lab_05.html[Lab 5 - Build a Hypermedia-Driven RESTful Web Service with Spring Data REST]
-** link:session_04/lab_06/lab_06.html[Lab 6 - Leveraging Spring Cloud Connectors for Service Binding]
-* Session 5 (link:session_05/session_05.pdf[Slides])
-** link:session_05/lab_07/lab_07.html[Lab 7 - Introspection, Monitoring, and Metrics using Spring Boot Actuator]
+* Session 2 (link:session_02/session_02.pdf[Slides])
+* Session 3
+** link:session_03/lab_05/lab_05.html[Lab 5 - Build a Hypermedia-Driven RESTful Web Service with Spring Data REST]
+** link:session_03/lab_06/lab_06.html[Lab 6 - Leveraging Spring Cloud Connectors for Service Binding]
+* Session 4 (link:session_04/session_04.pdf[Slides])
+** link:session_04/lab_07/lab_07.html[Lab 7 - Introspection, Monitoring, and Metrics using Spring Boot Actuator]
 
 
