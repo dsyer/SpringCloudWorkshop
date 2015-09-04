@@ -18,7 +18,7 @@ mwright@pivotal.io
 
 == Schedule
 
-This is _loose_ schedule for the day. We will adjust as necessary based on our pace through the material.
+This is a _loose_ schedule for the day. We will adjust as necessary based on our pace through the material.
 
 The lectures for this class are intentionally very light and are only intended to set the stage for the hands-on labs.
 The overwhelming majority of our time will be spent engaging with the technology directly!
@@ -35,8 +35,7 @@ $ git checkout customer
 
 === Day One
 
-8:00 AM - 8:30 AM:: *Session 1:* _Intro to Pivotal Cloud Foundry_
-8:30 AM - 9:30 AM:: *Session 2:* _Deploying to Cloud Foundry_
+8:00 AM - 9:30 AM:: *Session 1:* _Intro to Pivotal Cloud Foundry_
 9:30 AM - 10:00 AM:: Morning Break
 10:00 AM - 10:15 AM:: *Session 3:* _Custom Buildpacks_
 10:15 AM - 11:00 AM:: *Session 4:*  _Spring Data on Cloud Foundry_
@@ -50,12 +49,10 @@ $ git checkout customer
 == Course Materials
 
 * Session 1 (link:session_01/session_01.pdf[Slides])
-
-* Session 2
-** link:session_02/lab_01/lab_01.html[Lab 1 - From Zero to Pushing Your First Application]
-** link:session_02/lab_02/lab_02.html[Lab 2 - Binding to Cloud Foundry Services]
-** link:session_02/lab_03/lab_03.html[Lab 3 - Scaling Applications]
-** link:session_02/lab_04/lab_04.html[Lab 4 - Monitoring Applications]
+** link:session_01/lab_01/lab_01.adoc[Lab 1 - From Zero to Pushing Your First Application]
+** link:session_01/lab_02/lab_02.adoc[Lab 2 - Binding to Cloud Foundry Services]
+** link:session_01/lab_03/lab_03.adoc[Lab 3 - Scaling Applications]
+** link:session_01/lab_04/lab_04.adoc[Lab 4 - Monitoring Applications]
 * Session 3 (link:session_03/session_03.pdf[Slides])
 * Session 4
 ** link:session_04/lab_05/lab_05.html[Lab 5 - Build a Hypermedia-Driven RESTful Web Service with Spring Data REST]
