@@ -55,9 +55,9 @@ $ git checkout customer
 ** link:session_01/lab_04/lab_04.adoc[Lab 4 - Monitoring Applications]
 * Session 2 (link:session_02/session_02.pdf[Slides])
 * Session 3
-** link:session_03/lab_05/lab_05.html[Lab 5 - Build a Hypermedia-Driven RESTful Web Service with Spring Data REST]
-** link:session_03/lab_06/lab_06.html[Lab 6 - Leveraging Spring Cloud Connectors for Service Binding]
+** link:session_03/lab_05/lab_05.adoc[Lab 5 - Build a Hypermedia-Driven RESTful Web Service with Spring Data REST]
+** link:session_03/lab_06/lab_06.adoc[Lab 6 - Leveraging Spring Cloud Connectors for Service Binding]
 * Session 4 (link:session_04/session_04.pdf[Slides])
-** link:session_04/lab_07/lab_07.html[Lab 7 - Introspection, Monitoring, and Metrics using Spring Boot Actuator]
+** link:session_04/lab_07/lab_07.adoc[Lab 7 - Introspection, Monitoring, and Metrics using Spring Boot Actuator]
 
 
