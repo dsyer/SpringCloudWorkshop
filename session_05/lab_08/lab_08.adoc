@@ -295,7 +295,6 @@ image::../../Common/images/ConfigServerEntries.png[]
 . Visit the Fortune UI once again and see your configuration value on the page.
 +
 image::../../Common/images/HowdyFortune.png[]
-+
 
 == Use the Circuit Breaker Dashboard
 
@@ -310,7 +309,6 @@ image::../../Common/images/AppManager.png[]
 . Open the Fortune Teller UI.  Hit refresh several times.  You should see the execution counts change.
 +
 image::../../Common/images/CircuitBreakerDashboard.png[]
-+
 
 == Bonus
 . Go to the Application Manager console and stop the Fortune Service.
