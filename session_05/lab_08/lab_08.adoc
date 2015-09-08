@@ -200,15 +200,15 @@ image::/../../Common/images/YourFutureIsUnclear.png[]
 == View The Service Registry
 
 . Open the Application Manager console in your browser.  Go to the org and space where you created the service instances and scroll down until you see the entry for the Service Registry.
-
++
 image::../../Common/images/AppManager.png[]
-
++
 . Click the "Manage" link under the service registry.  
 
 . Click the "Service Registry Dashboard" link.
-
++
 image::../../Common/images/ServiceRegistryInstance.png[]
-
++
 . Notice that both the server and UI apps have registered themselves.  Explore the dashboard.
 
 image::../../Common/images/ServiceRegistryDashboard.png[]
