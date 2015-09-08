@@ -287,10 +287,11 @@ image::../../Common/images/ConfigServerEntries.png[]
 . Click "Submit".
 
 . Tell the Fortune UI app to refresh it's configuration by sending a POST to the "refresh" endpoint.
++
 ----
     curl -X POST https://fortunes-ui-wes.south.fe.pivotal.io/refresh
 ----
-+
+
 . Visit the Fortune UI once again and see your configuration value on the page.
 +
 image::../../Common/images/HowdyFortune.png[]
