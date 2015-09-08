@@ -297,4 +297,24 @@ image::../../Common/images/ConfigServerEntries.png[]
 image::../../Common/images/HowdyFortune.png[]
 +
 
+== Use the Circuit Breaker Dashboard
 
+. Open the Application Manager console in your browser.  Go to the org and space where you created the service instances and scroll down until you see the entry for the Circuit Breaker
++
+image::../../Common/images/AppManager.png[]
++
+. Click the "Manage" link under the Circuit Breaker. 
+
+. Click the "Circuit Breaker Dashboard" link.
+
+. Open the Fortune Teller UI.  Hit refresh several times.  You should see the execution counts change.
++
+image::../../Common/images/CircuitBreakerDashboard.png[]
++
+
+== Bonus
+. Go to the Application Manager console and stop the Fortune Service.
+
+. Go to the Fortune Teller UI and refresh it several times very quickly.
+
+. The Circuit Breaker Dashboard should show the Circuit Breaker has changed to "Open".
