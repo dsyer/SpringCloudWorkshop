@@ -247,15 +247,15 @@ git add . && git commit -m "initial commit"
 
 . Make sure you're logged in to your GitHub account, and create a new repository:
 +
-image::../../../Common/images/github_1.png[]
+image::../../Common/images/github_1.png[]
 
 . Give the repo a name and description, and then click ``Create repository'':
 +
-image::../../../Common/images/github_2.png[]
+image::../../Common/images/github_2.png[]
 
 . Paste the commands from ``...push an existing repository...'' to the command prompt and execute them:
 +
-image::../../../Common/images/github_3.png[]
+image::../../Common/images/github_3.png[]
 +
 ----
 $ git remote add origin https://github.com/mstine/springbox-config-repo.git
@@ -270,7 +270,7 @@ Branch master set up to track remote branch master from origin.
 
 . Refresh the browser to see your pushed changes:
 +
-image::../../../Common/images/GithubConfigRepo.png[]
+image::../../Common/images/GithubConfigRepo.png[]
 
 == Use The Config Server
 
@@ -290,7 +290,7 @@ image::../../Common/images/ConfigServerEntries.png[]
 ----
     curl -X POST https://fortunes-ui-wes.south.fe.pivotal.io/refresh
 ----
-
++
 . Visit the Fortune UI once again and see your configuration value on the page.
 +
 image::../../Common/images/HowdyFortune.png[]
