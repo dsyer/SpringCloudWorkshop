@@ -1,0 +1,48 @@
+:compat-mode:
+= Lab 8 - Binding to Spring Cloud Services
+
+[abstract]
+--
+
+--
+
+
+== Creating Service Instances
+
+. The Fortune service stores the fortunes in a database. 
+From the CLI, let's _create_ a free MySQL service instance:
++
+----
+
+$cf create-service p-mysql 100mb-dev fortune-db
+Creating service instance fortune-db in org whewatt_org / space testing as whewatt@pivotal.io...
+OK
+
+----
+
+. Next we'll create an instance of the config service.
++
+----
+$cf create-service p-config-server standard config-server
+Creating service instance config-server in org whewatt_org / space testing as whewatt@pivotal.io...
+OK
+----
+
+. Now, we need an instance of the service registry service.
++
+----
+$cf create-service p-service-registry standard service-registry
+Creating service instance service-registry in org whewatt_org / space testing as whewatt@pivotal.io...
+OK
+----
+
+. The final service that we need is for the circuit breaker.
+----
+$cf create-service p-circuit-breaker-dashboard standard circuit-breaker
+Creating service instance circuit-breaker in org whewatt_org / space testing as whewatt@pivotal.io...
+OK
+----
+
+== Push the applications
+
+

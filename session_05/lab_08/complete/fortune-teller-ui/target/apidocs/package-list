@@ -1,0 +1,3 @@
+io.spring.cloud.samples.fortuneteller.ui
+io.spring.cloud.samples.fortuneteller.ui.controllers
+io.spring.cloud.samples.fortuneteller.ui.services.fortunes

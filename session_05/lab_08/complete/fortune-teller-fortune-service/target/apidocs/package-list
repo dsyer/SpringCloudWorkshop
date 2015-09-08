@@ -1,0 +1,4 @@
+io.spring.cloud.samples.fortuneteller.fortuneservice
+io.spring.cloud.samples.fortuneteller.fortuneservice.controllers
+io.spring.cloud.samples.fortuneteller.fortuneservice.domain
+io.spring.cloud.samples.fortuneteller.fortuneservice.respositories
