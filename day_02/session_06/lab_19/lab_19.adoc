@@ -1,1 +1,0 @@
-= Lab 19 - Fault-Tolerance with Hystrix

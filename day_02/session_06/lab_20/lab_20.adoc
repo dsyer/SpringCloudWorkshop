@@ -1,1 +1,0 @@
-= Lab 20 - Monitoring Circuit Breakers with Hystrix Dashboard

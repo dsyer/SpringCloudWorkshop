@@ -1,1 +1,0 @@
-= Lab 18 - Declarative REST Clients with Feign

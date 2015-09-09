@@ -1,0 +1,24 @@
+:compat-mode:
+= Lab 10 - Using the Config Server
+
+. Open the Application Manager console in your browser.  Go to the org and space where you created the service instances and scroll down until you see the entry for the Config Server.
++
+image::../../Common/images/AppManager.png[]
++
+. Click the "Manage" link under the config server.  
+
+. Click the "Git" radio button and enter your config repo as the "Git URI".
++
+image::../../Common/images/ConfigServerEntries.png[]
++
+. Click "Submit".
+
+. Tell the Fortune UI app to refresh it's configuration by sending a POST to the "refresh" endpoint.
++
+----
+    curl -X POST https://fortunes-ui-wes.south.fe.pivotal.io/refresh
+----
+
+. Visit the Fortune UI once again and see your configuration value on the page.
++
+image::../../Common/images/HowdyFortune.png[]
