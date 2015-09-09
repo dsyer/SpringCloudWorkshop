@@ -3,14 +3,14 @@
 
 In this lab we'll utilize Spring Boot, Spring Data, and Spring Data REST to create a fully-functional hypermedia-driven RESTful web service. We'll then deploy it to Cloud Foundry (using Pivotal Web Services).
 
-NOTE: The completed code for this lab can be found at `$COURSE_HOME/session_04/lab_05/complete/cities`.
+NOTE: The completed code for this lab can be found at `$COURSE_HOME/session_03/lab_05/complete/cities`.
 
 == Initializing the Application
 
 . Change to the lab directory:
 +
 ----
-$ cd $COURSE_HOME/session_04/lab_05/initial/cities
+$ cd $COURSE_HOME/session_03/lab_05/initial/cities
 ----
 
 . Optionally generate project files for your favorite IDE by running +./gradlew idea+ or +./gradlew eclipse+. Then open the project in your editor or IDE of choice.
