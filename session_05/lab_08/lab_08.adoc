@@ -43,8 +43,22 @@ $cf create-service p-circuit-breaker-dashboard standard circuit-breaker
 Creating service instance circuit-breaker in org whewatt_org / space testing as whewatt@pivotal.io...
 OK
 ----
-
-== TBD:  Need to described how to access the consoles to init the services.
++
+. We need to initialize each of the Spring Cloud Services.  Open the Application Manager console and scroll down until you see the Spring Cloud services.  Under the "config-server", click "Manage".
++
+image::../../Common/images/SpringCloudConsole.png[]
++
+. You should see a blank page for the Config Server.
++
+image::../../Common/images/ConfigServerUp.png[]
++
+. Go back to the Application Manager console and click "Manage" under "service-registry".  When the service has initialized you should a screen similar to the following:
++
+image::../../Common/images/RegistryUp.png[]
++
+. Go back to the Application Manager console and click "Manage" under "circuit-breaker".  When the service has initialized you should a screen similar to the following:
++
+image::../../Common/images/CircuitBreakerUp.png[]
 
 == Push the applications
 
@@ -315,4 +329,4 @@ image::../../Common/images/CircuitBreakerDashboard.png[]
 
 . Go to the Fortune Teller UI and refresh it several times very quickly.
 
-. The Circuit Breaker Dashboard should show the Circuit Breaker has changed to "Open".
+. The Circuit Breaker Dashboard should show the Circuit Breaker has changed to "Open" and the error count is increasing.
