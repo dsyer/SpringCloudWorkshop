@@ -231,8 +231,8 @@ Date: Tue, 27 May 2014 19:59:58 GMT
   },
   "page" : {
     "size" : 20,
-    "totalElements" : 42741,
-    "totalPages" : 2138,
+    "totalElements" : 1000,
+    "totalPages" : 50,
     "number" : 0
   }
 }
@@ -350,7 +350,7 @@ Note that we now have new search endpoints for each of the finders that we added
 +
 [source,bash]
 ----
-$ curl -i "http://localhost:8080/cities/search/postalCode?q=75202"
+$ curl -i "http://localhost:8080/cities/search/postalCode?q=00623"
 $ curl -i "http://localhost:8080/cities/search/name?q=Boston"
 $ curl -i "http://localhost:8080/cities/search/nameContains?q=Fort&size=1"
 ----
