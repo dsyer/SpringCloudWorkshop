@@ -1,7 +1,7 @@
 :compat-mode:
 = Lab 6 - Leveraging Spring Cloud Connectors for Service Binding
 
-In this lab we'll bind our RESTful web service from link:../lab_05/lab_05.html[Lab 5] to a PostgreSQL database and leverage Spring Cloud Connectors to easily connect to it.
+In this lab we'll bind our RESTful web service from link:../lab_05/lab_05.adoc[Lab 5] to a MySQL database and leverage Spring Cloud Connectors to easily connect to it.
 
 NOTE: The completed code for this lab can be found at `$COURSE_HOME/session_03/lab_06/complete/cities`.
 
@@ -13,12 +13,12 @@ NOTE: The completed code for this lab can be found at `$COURSE_HOME/session_03/l
 $ cd $COURSE_HOME/session_03/lab_06/initial/cities
 ----
 
-. At present we're still using the in-memory database. Let's connect to a PostgreSQL database service provided by http://www.elephantsql.com/[ElephantSQL].
-From the CLI, let's _create_ a free ElephantSQL service instance:
+. At present we're still using the in-memory database. Let's connect to a MySQL database service.
+From the CLI, let's _create_ a developer MySQL service instance:
 +
 [source,bash]
 ----
-$ cf create-service elephantsql turtle cities-db
+$ cf create-service p-mysql 100mb-dev cities-db
 Creating service cities-db...
 OK
 ----
@@ -57,7 +57,7 @@ dependencies {
     // ....
     compile("org.springframework.cloud:spring-cloud-spring-service-connector:1.1.0.RELEASE")
     compile("org.springframework.cloud:spring-cloud-cloudfoundry-connector:1.1.0.RELEASE")
-    runtime("postgresql:postgresql:9.1-901-1.jdbc4")
+    runtime("org.mariadb.jdbc:mariadb-java-client:1.1.7")
 }
 ----
 +
@@ -110,10 +110,10 @@ $ cf push
 ----
 $ curl http://cities-crouse-penance.cfapps.io/env
 ...
-VCAP_SERVICES: "{"elephantsql":[{"name":"cities-db","label":"elephantsql","tags":["Data Stores","Cloud Databases","Developer Tools","Data Store","postgresql","relational","New Product"],"plan":"turtle","credentials":{"uri":"postgres://okoaxkll:Il2L3Z6vSywRw2kNKd4G997VAhd3c7gy@babar.elephantsql.com:5432/okoaxkll","max_conns":"5"}}]}",
+VCAP_SERVICES: "{"p-mysql":[{"name":"cities-db","label":"p-mysql","tags":["mysql","relational"],"plan":"100mb-dev","credentials":{"hostname":"192.168.8.210","port":3306,"name":"cf_c35b685f_00e6_43e9_bed0_67210f562dd9","username":"ru6zHmkfacgv6I3p","password":"cGJArKXEcUPBNXer","uri":"mysql://ru6zHmkfacgv6I3p:cGJArKXEcUPBNXer@192.168.8.210:3306/cf_c35b685f_00e6_43e9_bed0_67210f562dd9?reconnect=true","jdbcUrl":"jdbc:mysql://192.168.8.210:3306/cf_c35b685f_00e6_43e9_bed0_67210f562dd9?user=ru6zHmkfacgv6I3p&password=cGJArKXEcUPBNXer"}}]}",
 ...
 ----
-The application is now running against a PostgreSQL database.
+The application is now running against a MySQL database.
 
 == Customizing the +DataSource+
 
@@ -146,4 +146,28 @@ $ ./gradlew assemble
 [source,bash]
 ----
 $ cf push
+----
+
+== Clean Up
+
+Issue the following commands to delete the cities application and its database.
+
+. Delete the `cities` application:
++
+----
+$ cf d cities
+
+Really delete the app cities?> y
+Deleting app cities in org oreilly-class / space instructor as mstine@pivotal.io...
+'OK
+----
+
+. Delete the `cities-db` service:
++
+----
+$ cf ds cities-db
+
+Really delete the service cities-db?> y
+Deleting service cf-scale-boot-logs in org oreilly-class / space instructor as mstine@pivotal.io...
+OK
 ----
