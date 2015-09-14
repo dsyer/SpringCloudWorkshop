@@ -23,7 +23,7 @@ $ cf api api.run.pivotal.io
 $ cf login
 ----
 +
-Follow the prompts, choosing `oreilly-class` when prompted for an organization and `studentXX` when prompted for a space.
+Follow the prompts, choosing default organization and space.
 
 == Build and Push!
 
