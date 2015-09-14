@@ -57,7 +57,7 @@ $ git fetch --all
 ** link:session_03/lab_06/lab_06.adoc[Lab 6 - Leveraging Spring Cloud Connectors for Service Binding]
 * Session 4 (link:session_04/Session_04.pdf[Slides])
 ** link:session_04/lab_07/lab_07.adoc[Lab 7 - Introspection, Monitoring, and Metrics using Spring Boot Actuator]
-* Session 5 ((link:session_05/Session_05.pdf[Slides]))
+* Session 5 (link:session_05/Session_05.pdf[Slides])
 ** link:session_05/lab_08/lab_08.adoc[Lab 8 - Binding Spring Cloud Services]
 ** link:session_05/lab_09/lab_09.adoc[Lab 9 - Service Registry]
 ** link:session_05/lab_10/lab_10.adoc[Lab 10 - Config Server]
