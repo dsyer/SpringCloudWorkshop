@@ -201,7 +201,7 @@ Creating user provided service cf-scale-boot-logs in org oreilly-class / space i
 OK
 ----
 
-. We bind that service instance like those we created in link:../lab_02/lab_02.html[Lab 2]:
+. We bind that service instance like those we created in link:../lab_02/lab_02.adoc[Lab 2]:
 +
 ----
 $ cf bs cf-scale-boot cf-scale-boot-logs
@@ -224,7 +224,7 @@ You can see how to connect to other third-party log management systems in the ht
 
 == Health
 
-Cloud Foundry's http://docs.cloudfoundry.org/concepts/architecture/#hm9k[Heatlh Manager] actively monitors the health of our application processes and will restart them should they crash.
+Cloud Foundry's http://docs.cloudfoundry.org/concepts/architecture/#hm9k[Health Manager] actively monitors the health of our application processes and will restart them should they crash.
 
 . If you don't have one already running, start a log tail for `cf-scale-boot`:
 +
