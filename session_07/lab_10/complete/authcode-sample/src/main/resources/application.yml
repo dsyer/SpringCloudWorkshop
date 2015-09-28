@@ -1,18 +1,19 @@
 server:
   tomcat:
     remote_ip_header: x-forwarded-for
-    protocol_header: x-forwarded-proto
-    internal_proxies: 10\.\d{1,3}\.\d{1,3}\.\d{1,3}|192\.168\.\d{1,3}\.\d{1,3}|169\.254\.\d{1,3}\.\d{1,3}|127\.\d{1,3}\.\d{1,3}\.\d{1,3}|172\.1[6-9]{1}\.\d{1,3}\.\d{1,3}|172\.2[0-9]{1}\.\d{1,3}\.\d{1,3}|172\.3[0-1]{1}\.\d{1,3}\.\d{1,3}
 security:
   ignored: /favicon.ico, /
   basic:
     enabled: false
-idServiceUrl: https://auth-domain.login.cf.vca08.pivotal.io
+  user:
+    password: password
+idServiceUrl: ${vcap.services.sso.credentials.auth_domain:localhost:8080/uaa}
 spring.oauth2:
     client:
-      accessTokenUri: https://auth-domain.login.cf.vca08.pivotal.io/oauth/token
-      userAuthorizationUri: https://auth-domain.login.cf.vca08.pivotal.io/oauth/authorize
-      clientId: ca3a63f7-4c85-480b-a61c-64a3e8f2a518
-      clientSecret: ${CLIENT_SECRET}
+      accessTokenUri: ${idServiceUrl}/oauth/token
+      userAuthorizationUri: ${idServiceUrl}/oauth/authorize
+      clientId: ${vcap.services.sso.credentials.client_id:acme}
+      clientSecret: ${vcap.services.sso.credentials.client_secret:acmesecret}
     resource:
-      jwt.keyUri: https://auth-domain.login.cf.vca08.pivotal.io/token_key
+#      jwt.keyUri: ${idServiceUrl}/token_key
+      userInfoUri: ${idServiceUrl}/userinfo

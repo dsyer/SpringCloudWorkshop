@@ -2,6 +2,7 @@ package demo;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.security.oauth2.sso.EnableOAuth2Sso;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -11,6 +12,7 @@ import java.util.UUID;
 
 @SpringBootApplication
 @RestController
+@EnableOAuth2Sso
 public class UiApplication {
     @RequestMapping("/resource")
     public Map<String,Object> home() {
